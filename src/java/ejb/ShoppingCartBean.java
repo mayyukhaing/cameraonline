@@ -42,7 +42,7 @@ public class ShoppingCartBean implements ShoppingCart
 		try
 		{
 			stmt = conn.createStatement();
-			query = "INSERT INTO Cart VALUES('" + customerName + "','" + title + "')";
+			query = "INSERT INTO Cart VALUES('" + customerName + "','" + title + "')"; // sql query
 			stmt.executeUpdate(query);
 		}
 		catch(Exception e)
